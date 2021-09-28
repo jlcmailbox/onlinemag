@@ -1,0 +1,49 @@
+* {
+    border: 1px dashed red;
+} 
+
+.content{
+    margin: auto;
+    width: 90%;
+    @include respond-to('medium'){
+        width: 80%;
+    }
+}
+
+.news__post {
+    width: 100%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.news__content {
+    margin: 5px;
+    img {
+    width: 100%;
+    }
+
+    p {
+    padding: 5px 10px;
+}
+}
+
+.sidebar {
+    display: none;
+
+    @include respond-to('medium'){
+        display: block;
+        padding: 0 2rem;
+        margin: auto;
+    }
+
+    &__about{
+        width: 100%;
+    }
+
+    &__pinned{
+        width: 100%;
+        img{
+        width: 100%;
+        }
+    }
+}
